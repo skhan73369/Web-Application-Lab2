@@ -1,0 +1,146 @@
+body {
+    
+    background: #417579;
+  }
+  .grid-1{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    max-width: 87.95%;
+    grid-template-columns: 50% 49.5% .5%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0px;
+	
+    grid-template-areas: "topMain topMain1"
+                         "image Content1"
+                         "Content2 Content2"
+                         "Content3 Content4"
+                         "Content5 Content6";
+}
+.title{
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Cool-Blue-Gradient-Background.jpg);
+    background-color: #cccccc;
+    padding: 40px; 
+    z-index: 1;
+    position: relative;
+}
+.title h1{
+    font-size: 40px;
+}
+.sidebar{
+    position: fixed;
+    top: 8px;
+    right: .52%;
+    bottom: 6px;
+    width: 12.4%; 
+    background-color: #6DA4A8;
+    z-index: 0;
+}
+ul{
+    list-style-type: none;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 10;
+    left: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    color: blue;
+}
+
+.grid-1 div{
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-topMain1 {
+    background: rgb(231, 240, 240);
+    grid-area: topMain;
+}
+.item-topMain2 {
+    background: rgb(243, 247, 247);
+    grid-area: topMain1;
+}
+.item-Image {
+	display: block;
+    background: white;
+    grid-area: image;
+    border: solid;
+}
+img{
+    margin: -20px 0px -20px -19.7px;
+}
+.item-Content1 {
+    background: rgb(231, 240, 240);
+    grid-area: Content1;
+}
+.item-Content2 {
+    background: #CFE5E6;
+    grid-area: Content2;
+    
+    overflow: hidden;
+    
+}
+.item-Content2 > p{
+    text-align: left;
+    margin: 10 31% 0 38%;
+}
+.para{
+    text-align: left;
+    margin: 20px;
+}
+
+.item-Content3 {
+    background: rgb(243, 247, 247);
+    grid-area: Content3;
+}
+.item-Content4 {
+    background: rgb(231, 240, 240);
+    grid-area: Content4;
+}
+.item-Content5 {
+    background: rgb(231, 240, 240);
+    grid-area: Content5;
+}
+.item-Content6 {
+    background: rgb(243, 247, 247);
+    grid-area: Content6;
+} 
+.item-Content1,.item-Content2,.item-Content3,.item-Content4,
+.item-Content5,.item-Content6,.item-Image,.item-topMain1,
+.item-topMain2 {
+    border: solid;
+}
+h3{
+    text-align: center;
+}
+.tabGrid{
+    display:grid;
+    background: #CFE5E6;
+    width: 87.5%;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template: "tab";
+}
+.table{
+    grid-area: tab;
+    border: solid;
+    margin: 0;
+    
+}
+.time{
+    background-color: #D8ECF0;
+    width: 100px;
+}
+.event{
+    background-color: #80ADA8;
+    width: 200px;
+}
+
